@@ -35,11 +35,18 @@ body{
 
 
 
+                                        .image{
+                                          width: 100%;
+                                          display: flex;
+                                          justify-content: space-between;
+                                          padding: 20px;
+                                        }
+
+
                               .winPaper{
                                 grid-area: B;
                                 border: 2px solid black;
                               }
-
 
 
                               .Text{
