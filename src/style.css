@@ -6,4 +6,31 @@
 
 body{
   font-family: 'Epilogue', sans-serif;
+  font-size: 18px;
+}
+
+#Grid{
+  display: grid;
+  grid-template-areas: 
+  'A'
+  'B'
+  'C';
+}
+
+.Card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Main{
+  grid-area: A;
+}
+
+.Image{
+  grid-area: B;
+}
+
+.Text{
+  grid-area: C;
 }
