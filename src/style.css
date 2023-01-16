@@ -9,28 +9,40 @@ body{
   font-size: 18px;
 }
 
-#Grid{
-  display: grid;
-  grid-template-areas: 
-  'A'
-  'B'
-  'C';
-}
+          #Grid{
+            display: grid;
+            grid-template-areas: 
+            'A'
+            'B'
+            'C';
+            gap: 10px;
+          }
 
-.Card{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-.Main{
-  grid-area: A;
-}
 
-.Image{
-  grid-area: B;
-}
+                    .Card{
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    }
 
-.Text{
-  grid-area: C;
-}
+
+
+                              .Main{
+                                grid-area: A;
+                                border: 2px solid black;
+                              }
+
+
+
+                              .winPaper{
+                                grid-area: B;
+                                border: 2px solid black;
+                              }
+
+
+
+                              .Text{
+                                grid-area: C;
+                                border: 2px solid black;
+                              }
