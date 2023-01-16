@@ -2,11 +2,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-align: center;
 }
 
 body{
   font-family: 'Epilogue', sans-serif;
   font-size: 18px;
+}
+
+h1{
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+p{
+  margin-bottom: 20px;
 }
 
           #Grid{
@@ -36,11 +46,12 @@ body{
 
 
                                         .image{
-                                          width: 100%;
+                                          width: 90%;
                                           display: flex;
                                           justify-content: space-between;
-                                          padding: 20px;
+                                          padding: 15px;
                                         }
+
 
 
                               .winPaper{
@@ -49,7 +60,59 @@ body{
                               }
 
 
+
+                                        .iconDesktop{
+                                          display: none;
+                                        }
+
+                                        .iconMobile{
+                                          display: block;
+                                          object-fit: cover;
+                                          max-width: 400px;
+                                        }
+
+
                               .Text{
                                 grid-area: C;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 10px;
                                 border: 2px solid black;
                               }
+
+
+                                        .Text h1{}
+                                        .Text p{}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:960px){
+
+          #Grid{
+            display: grid;
+            grid-template-areas: 
+            'A A'
+            'C B';
+            gap: 10px;
+          }
+
+                                        .iconDesktop{
+                                          display: block;
+                                          object-fit: cover;
+                                          max-width: 400px;
+                                        }
+
+                                        .iconMobile{
+                                          display: none;
+
+                                        }
+
+}
