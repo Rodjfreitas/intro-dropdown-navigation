@@ -74,8 +74,7 @@ p{
                                         .iconMobile{
                                           display: block;
                                           object-fit: cover;
-                                          min-width: 280px;
-                                          max-width: 380px;
+                                          max-width: 100%;
                                         }
 
 
@@ -97,19 +96,16 @@ p{
                                           padding: 10px 15px;
                                           border-radius: 15px;
                                           margin-bottom: 15px;
+                                          border: none;
 
                                         }
 
 
                                         .icons{
-                                          margin: 15px 0;
-                                          padding: 3px;
-                                          width: 100%;
                                           display: flex;
                                           justify-content: center;
                                           align-items: center;
-                                          max-width: 70px;
-                                          
+                                          width: 40%; 
                                         }
 
                                                   .icons img{
@@ -128,9 +124,8 @@ p{
 @media screen and (min-width:750px){
 
  h1{
-    font-size: 70px;
-    margin-bottom: 40px;
-    width: 470px;
+    
+    
   }
 
           #Grid{
@@ -139,31 +134,62 @@ p{
             'A A'
             'C B';
             gap: 10px;
+            margin: 20px;
           }
 
 
-                    .Text{
-                      display: flex;
-                      flex-direction: column;
-                      justify-content: left;
-                    }
+                              .Text{
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: left;
+                                border: 2px solid black;
+                              }
 
-                         .Text h1{
-                          border: 2px solid black;
-                          position: relative;
-                          left: -100px;
-                          
-                    }
+                                            .Text h1{
+                                              border: 2px solid black;
+                                              font-size: 70px;
+                                              margin-bottom: 50px;
+                                              margin-top: 80px;
+                                              width: 470px;
+                                              text-align: left;
+                                              
+                                            }
+                                            .Text p{
+                                              border: 2px solid black;
+                                              text-align: left;
+                                              width: 470px;
+                                            }
+                                            
+                                            .btn{
+                                              width: 470px;
+                                              
+                                            }
+                                            .learnBtn{
+                                              float: left;
+                                              
+                                            }
 
-                                        .iconDesktop{
-                                          display: block;
-                                          object-fit: cover;
-                                          max-width: 400px;
-                                        }
+                                            .learnBtn:hover{
+                                              cursor: pointer;
+                                              border: 2px solid hsl(0, 0%, 8%);
+                                              color: hsl(0, 0%, 8%);
+                                              background-color:hsl(0, 0%, 98%); ;
+                                            }
 
-                                        .iconMobile{
-                                          display: none;
+                                                      .iconDesktop{
+                                                        display: block;
+                                                        object-fit: cover;
+                                                        max-width: 400px;
+                                                      }
 
-                                        }
+                                                      .iconMobile{
+                                                        display: none;
+                                                      }
+
+                                                      .icons img{
+                                                        margin: 35px;
+                                                      }
 
 }
+
+
