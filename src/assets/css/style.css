@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body{
+  font-family: 'Epilogue', sans-serif;
+  font-size: 18px;
+  background-color: hsl(0, 0%, 98%);
+}
+
+h1{
+  font-size: 35px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  color: hsl(0, 0%, 8%);
+  font-weight: 700;
+}
+
+p{
+  margin-bottom: 25px;
+  line-height: 28px;
+  color: hsl(0, 0%, 41%);
+}
+
+          #Grid{
+            display: grid;
+            grid-template-areas: 
+            'A'
+            'B'
+            'C';
+            gap: 10px;
+          }
+
+
+
+                    .Card{
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    }
+
+
+
+                              .Main{
+                                grid-area: A;
+                                display: flex;
+                                flex-direction: column;
+                              }
+
+
+
+                                        .image{
+                                          width: 100%;
+                                          display: flex;
+                                          justify-content: space-between;
+                                          padding: 15px;
+                                        }
+
+
+
+                              .winPaper{
+                                grid-area: B;
+                              }
+
+
+
+                                        .iconDesktop{
+                                          display: none;
+                                        }
+
+                                        .iconMobile{
+                                          display: block;
+                                          object-fit: cover;
+                                          min-width: 280px;
+                                          max-width: 380px;
+                                        }
+
+
+                              .Text{
+                                grid-area: C;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                padding: 10px;
+                              }
+
+
+                                        .learnBtn{
+                                          font-size: 20px;
+                                          font-weight: 500;
+                                          color: hsl(0, 0%, 98%);
+                                          background-color: hsl(0, 0%, 8%);
+                                          padding: 10px 15px;
+                                          border-radius: 15px;
+                                          margin-bottom: 15px;
+
+                                        }
+
+
+                                        .icons{
+                                          margin: 15px 0;
+                                          padding: 3px;
+                                          width: 100%;
+                                          display: flex;
+                                          justify-content: center;
+                                          align-items: center;
+                                          max-width: 70px;
+                                          
+                                        }
+
+                                                  .icons img{
+                                                    margin: 20px;
+                                                  }
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:750px){
+
+ h1{
+    font-size: 70px;
+    margin-bottom: 40px;
+    width: 470px;
+  }
+
+          #Grid{
+            display: grid;
+            grid-template-areas: 
+            'A A'
+            'C B';
+            gap: 10px;
+          }
+
+
+                    .Text{
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: left;
+                    }
+
+                         .Text h1{
+                          border: 2px solid black;
+                          position: relative;
+                          left: -100px;
+                          
+                    }
+
+                                        .iconDesktop{
+                                          display: block;
+                                          object-fit: cover;
+                                          max-width: 400px;
+                                        }
+
+                                        .iconMobile{
+                                          display: none;
+
+                                        }
+
+}
