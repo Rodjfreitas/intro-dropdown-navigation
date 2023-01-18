@@ -28,9 +28,9 @@ p{
           #Grid{
             display: grid;
             grid-template-areas: 
-            'A'
-            'B'
-            'C';
+            'A D'
+            'B D'
+            'C D';
             gap: 10px;
           }
 
@@ -49,6 +49,22 @@ p{
                                 display: flex;
                                 flex-direction: column;
                               }
+
+                                        .iconDown{
+                                          display: none;
+                                        }
+
+                                        .featlistSecond{
+                                          display: block;
+                                          width: 100%;                                          
+                                          margin-top: -10px;
+                                        }
+                                              .featlistSecond img{
+                                                margin-right: 10px;
+                                              }
+                                              .featlistSecond li{
+                                                font-size: 16px;
+                                              }
 
 
 
@@ -111,6 +127,59 @@ p{
                                                   .icons img{
                                                     margin: 20px;
                                                   }
+                                
+
+                                        .navigation{
+                                          display: flex;
+                                          flex-direction: column;
+                                          width: 200px;
+                                          border: 2px solid black;
+                                          height: 100vh;
+                                        }
+
+                                                  .imageExit{
+                                                    width: 100%;
+                                                    display: flex;
+                                                    justify-content: right;
+                                                    padding: 15px;
+                                                    margin-bottom: 20px;
+                                                  }
+                                                  
+                                                  ul{                                                   
+                                                    list-style: none;
+                                                    padding: 20px;
+                                                  }
+                                                            li{
+                                                              color: hsl(0, 0%, 41%);
+                                                              text-align: left;
+                                                              margin-bottom: 20px;
+                                                            }
+
+                                                  .buttons{
+                                                    width: 100%;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    padding: 20px 10px;
+                                                  }
+
+                                                            .login-btn, .register-btn{
+                                                              align-items: center;
+                                                              justify-content: center;
+                                                              margin-bottom: 20px;
+                                                              font-size: 17px;
+                                                              padding: 10px;
+                                                              border-radius: 15px;
+                                                              background-color: hsl(0, 0%, 98%);
+                                                              color: hsl(0, 0%, 41%);
+                                                              border: none;
+                                                            }
+
+                                                            .login-btn:hover, .register-btn:hover{
+                                                              border: 1px solid hsl(0, 0%, 41%);                                                              
+                                                              font-weight: 700;
+                                                            }
+
+                                                  
 
 
 
