@@ -30,7 +30,8 @@ p{
             grid-template-areas: 
             'A'
             'B'
-            'C';
+            'C'
+            'D';
             gap: 10px;
           }
 
@@ -64,6 +65,7 @@ p{
 
                               .winPaper{
                                 grid-area: B;
+
                               }
 
 
@@ -112,6 +114,20 @@ p{
                                                   .icons img{
                                                     margin: 20px;
                                                   }
+
+
+                            #attribution{
+                              grid-area: D;
+                            
+                            }
+
+                                      .attribution a { 
+                                        color: hsl(228, 45%, 44%); 
+                                      }
+
+                                      .attribution p {
+                                        font-size: 10px;
+                                      }
 
                             .Nav{
                               display: flex;

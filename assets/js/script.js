@@ -7,11 +7,20 @@ const clickCloseComp = document.querySelector('.compiconUp');
 const pageMenu = document.querySelector('.navigation');
 const pageFeatures = document.querySelector('.featlistSecond');
 const pageCompany = document.querySelector('.complist');
+const pageMain = document.querySelector('#Grid');
+const Screen = document.querySelector('body');
+
 
 
 function openMenu(){
   pageMenu.style.display = 'flex';
-  pageMenu.style.width = '63%'
+  pageMenu.style.width = '63%';
+  pageMain.style.opacity = '30%';
+  pageMain.style.backgroundColor = 'hsl(0, 0%, 41%)';
+  Screen.style.backgroundColor = 'hsl(0, 0%, 41%)';
+  
+
+  
 }
 
 function closeMenu(){
@@ -19,6 +28,9 @@ function closeMenu(){
   pageMenu.style.width = 0
   closeCompany();
   closeFeatures();
+  pageMain.style.opacity = '100%';
+  pageMain.style.backgroundColor = 'hsl(0, 0%, 98%)';
+  Screen.style.backgroundColor = 'hsl(0, 0%, 98%)';
 
 }
 
