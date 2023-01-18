@@ -17,6 +17,9 @@ function openMenu(){
 function closeMenu(){
   pageMenu.style.display = 'none';
   pageMenu.style.width = 0
+  closeCompany();
+  closeFeatures();
+
 }
 
 function openFeatures(){
