@@ -28,9 +28,9 @@ p{
           #Grid{
             display: grid;
             grid-template-areas: 
-            'A D'
-            'B D'
-            'C D';
+            'A'
+            'B'
+            'C';
             gap: 10px;
           }
 
@@ -50,21 +50,6 @@ p{
                                 flex-direction: column;
                               }
 
-                                        .iconDown{
-                                          display: none;
-                                        }
-
-                                        .featlistSecond{
-                                          display: block;
-                                          width: 100%;                                          
-                                          margin-top: -10px;
-                                        }
-                                              .featlistSecond img{
-                                                margin-right: 10px;
-                                              }
-                                              .featlistSecond li{
-                                                font-size: 16px;
-                                              }
 
 
 
@@ -127,15 +112,42 @@ p{
                                                   .icons img{
                                                     margin: 20px;
                                                   }
+
+                            .Nav{
+                              display: flex;
+                              justify-content: right;
+                            }
                                 
 
                                         .navigation{
+                                          position: absolute;
+                                          float:right;
+                                          top: 0px;   
+                                          padding: 0 15px 0;                                      
+                                          background-color: hsl(0, 0%, 98%);
                                           display: flex;
                                           flex-direction: column;
-                                          width: 200px;
-                                          border: 2px solid black;
+                                          width: 63%;
                                           height: 100vh;
                                         }
+
+
+                                        .featiconDown,.compiconDown{
+                                          display: none;
+                                        }
+
+                                        .featlistSecond, .complist{
+                                          display: block;
+                                          width: 100%;                                          
+                                          margin-top: -10px;
+                                        }
+                                              .featlistSecond img{
+                                                margin-right: 10px;
+                                              }
+                                              .featlistSecond li{
+                                                font-size: 16px;
+                                              }
+
 
                                                   .imageExit{
                                                     width: 100%;
@@ -156,7 +168,7 @@ p{
                                                             }
 
                                                   .buttons{
-                                                    width: 100%;
+                                                    width: 90%;
                                                     display: flex;
                                                     flex-direction: column;
                                                     padding: 20px 10px;
@@ -171,11 +183,10 @@ p{
                                                               border-radius: 15px;
                                                               background-color: hsl(0, 0%, 98%);
                                                               color: hsl(0, 0%, 41%);
-                                                              border: none;
+                                                              border: 1px solid hsl(0, 0%, 41%);
                                                             }
 
-                                                            .login-btn:hover, .register-btn:hover{
-                                                              border: 1px solid hsl(0, 0%, 41%);                                                              
+                                                            .login-btn:hover, .register-btn:hover{                                                                                                                            
                                                               font-weight: 700;
                                                             }
 
