@@ -142,11 +142,9 @@ p{
                                 display: flex;
                                 flex-direction: column;
                                 justify-content: left;
-                                border: 2px solid black;
                               }
 
                                             .Text h1{
-                                              border: 2px solid black;
                                               font-size: 70px;
                                               margin-bottom: 50px;
                                               margin-top: 80px;
@@ -155,7 +153,6 @@ p{
                                               
                                             }
                                             .Text p{
-                                              border: 2px solid black;
                                               text-align: left;
                                               width: 470px;
                                             }
