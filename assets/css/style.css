@@ -11,7 +11,7 @@ body{
 }
 
 h1{
-  font-size: 35px;
+  font-size: 66px;
   margin-bottom: 20px;
   margin-top: 15px;
   color: hsl(0, 0%, 8%);
@@ -66,24 +66,89 @@ grid-template-areas:
 
 #submenuFeat,#submenuCompany{
   list-style: none;
-  margin-top: 10px;
+  margin-top: 10px;   
+  background-color:hsl(0, 0%, 98%);
+  box-shadow: 2px 2px 5px 5px hsl(0, 0%, 41%);
+  padding: 5px;  
+  overflow: hidden;
+}
+
+
+
+#submenuFeat li,#submenuCompany li{
+  margin-bottom: 8px;
+  font-size: 12px;
+  
+}
+
+#submenuFeat li:hover,#submenuCompany li:hover{
+  cursor: pointer;
+  background-color: rgb(220, 220, 226);
+  border-radius: 10px;
+  padding: 1px;
+}
+
+#texto{
+  padding-left: 150px;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+#texto h1,p{
+  width: 450px;
+  margin-bottom: 70px;
+}
+
+#texto p{
+  line-height: 25px;
+}
+
+.icons img{
+  margin-right: 20px;
+}
+
+.btn-learn{
+  font-family: 'Epilogue', sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  margin-bottom: 50px;
+}
+
+.btn-learn:hover{
+  cursor: pointer;
+  background-color:hsl(0, 0%, 98%); 
+  color: hsl(0, 0%, 8%);
 }
 
 #button button{
+  font-family: 'Epilogue', sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 98%);
+  border: 0;  
+}
+
+#button button:hover{
+  cursor: pointer;
+  border: 1px solid hsl(0, 0%, 8%);
 }
 
 
 
 #winPaper{
   grid-area: B;
-  border: 1px solid black;
+  margin-right: 100px;
 }
 
 
 
 .iconDesktop{
   display: block;
-  object-fit: cover;
   max-width: 100%;
 }
 
@@ -101,7 +166,7 @@ grid-template-areas:
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid black;
+  text-align: center;
 
 }
 
@@ -111,4 +176,97 @@ grid-template-areas:
 
 .attribution p {
   font-size: 10px;
+}
+
+#btn-menu, #btn-close{
+  display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+
+#Grid{
+  display: grid;
+  grid-template-areas: 
+  'A'
+  'B'
+  'C'
+  'D';
+}
+
+.Card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header{
+  display: flex;
+  border: 1px solid black;
+  
+}
+
+#winPaper{
+  grid-area: B;
+  margin-right: 0;
+}
+
+.iconDesktop{
+  display: none;
+}
+
+.iconMobile{
+  display: block;
+  object-fit: cover;
+}
+
+#menu{
+  display: none;
+}
+
+#btn-menu{
+  display: block;
+}
+
+#button{
+  display: none;
+}
+
+#texto{
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border: 1px solid black;
+}
+
+#texto h1,p{
+  width: 300px;
+  margin-bottom: 0;
+}
+
+#texto h1{
+  font-size: 30px;
+}
+
+#texto p{
+  line-height: 15px;
+}
+
+.icons img{
+  margin-right: 20px;
+}
+
+.btn-learn{
+  font-family: 'Epilogue', sans-serif;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  margin-bottom: 50px;
+}
+
+  
 }
