@@ -116,8 +116,11 @@ p{
                                                   }
 
 
-                            #attribution{
+                            .attribution{
                               grid-area: D;
+                              display: flex;
+                              justify-content: center;
+                              align-items: center;
                             
                             }
 
@@ -234,11 +237,32 @@ p{
           #Grid{
             display: grid;
             grid-template-areas: 
-            'A A'
-            'C B';
+            'A E E'
+            'C C B'
+            'D D D';
             gap: 10px;
             margin: 20px;
           }
+.Main{
+  border: 1px solid black;
+}
+.iconMenu{
+display: none;
+}
+                              .iconExit{
+                                display: none;
+                              }
+
+                              .Nav{
+                                display: flex;
+                              }
+
+                              .navigation{
+                                grid-area: E;
+                                border: 1px solid black;
+                                display: flex;
+                              }
+
 
 
                               .Text{
