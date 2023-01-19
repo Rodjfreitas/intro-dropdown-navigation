@@ -22,25 +22,51 @@
 <body>
   <main>
       <div id="Grid">
-          <div class="Card Main">
-            <div class="image">
-              <img class="iconLogo" src="assets/images/logo.svg" alt="">
-              <img class="iconMenu" src="assets/images/icon-menu.svg" alt="">
-            </div>            
-          </div>
-          <div class="Card winPaper">
+
+          <header id="header">
+            <img id="logo" src="assets/images/logo.svg">
+            <img id="btn-menu" src="assets/images/icon-menu.svg">
+            <img id="btn-close" src="assets/images/icon-close-menu.svg">
+            <nav id="nav">
+              <ul id="menu">
+                <li><a href="/">Features</a>
+                  <ul id="submenuFeat">
+                    <li><a href="/"></a>Todo Lis</li>
+                    <li><a href="/"></a>Calendar</li>
+                    <li><a href="/"></a>Reminders</li>
+                    <li><a href="/"></a>Planning</li>
+                  </ul>
+                </li>
+                <li><a href="/">Company</a>
+                  <ul id="submenuCompany">
+                    <li><a href="/"></a>History</li>
+                    <li><a href="/"></a>Our Team</li>
+                    <li><a href="/"></a>Blog</li>
+                  </ul>
+              </li>
+                <li><a href="/">Careers</a></li>
+                <li><a href="/">About</a></li>
+              </ul>
+            </nav> 
+            <div id="button">
+              <button>Login</button>
+              <button>Register</button>
+            </div>
+          </header>
+
+
+          <div id="winPaper">
             <img class="iconDesktop" src="assets/images/image-hero-desktop.png" alt="">
             <img class="iconMobile" src="assets/images/image-hero-mobile.png" alt="">
-
           </div>
 
-          <div class="Card Text">
+          
+    
+          <div id="texto">
             <h1>Make remote work</h1>
             <p>Get your team in sync, no matter your location. Streamline processes, 
               create team rituals, and watch productivity soar.</p>
-            <div class="btn">
-              <button class="learnBtn">Learn more</button>
-            </div>
+            <button>Learn more</button>
             <div class="icons">
               <img class="icons" src="assets/images/client-databiz.svg" alt="">
               <img class="icons" src="assets/images/client-audiophile.svg" alt="">
@@ -48,6 +74,10 @@
               <img class="icons" src="assets/images/client-maker.svg" alt="">
             </div>
           </div>
+
+
+
+
           <div class="attribution">
             <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
             Coded by <a href="#">Rodrigo Freitas</a></p>.
@@ -55,34 +85,6 @@
 
       </div>
 
-      <div class="Card Nav">
-        <nav class="navigation">
-          <div class="imageExit">
-            <img class="iconExit" src="assets/images/icon-close-menu.svg" alt="">
-          </div>
-          <ul class="featlistMain">
-            <li>Features<img class="featiconUp" src="assets/images/icon-arrow-up.svg"> <img class="featiconDown" src="assets/images/icon-arrow-down.svg"></li>
-              <ul class="featlistSecond">
-                <li><img src="assets/images/icon-todo.svg">Todo List</li>
-                <li><img src="assets/images/icon-calendar.svg">Calendar</li>
-                <li><img src="assets/images/icon-reminders.svg">Reminders</li>
-                <li><img src="assets/images/icon-planning.svg">Planning</li>
-              </ul>
-            <li>Company <img class="compiconUp" src="assets/images/icon-arrow-up.svg"><img class="compiconDown" src="assets/images/icon-arrow-down.svg"></li>
-              <ul class="complist">
-                <li>History</li>
-                <li>Our Team</li>
-                <li>Blog</li>
-              </ul>
-            <li>Careers</li>
-            <li>About</li>
-          </ul>
-          <div class="buttons">
-            <button class="login-btn">Login</button>
-            <button class="register-btn">Register</button>
-          </div>
-        </nav>
-      </div>
 
   </main>
 <script src="assets/js/script.js"></script>

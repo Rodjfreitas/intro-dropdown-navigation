@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-align: center;
 }
 
 body{
@@ -25,295 +24,91 @@ p{
   color: hsl(0, 0%, 41%);
 }
 
-          #Grid{
-            display: grid;
-            grid-template-areas: 
-            'A'
-            'B'
-            'C'
-            'D';
-            gap: 10px;
-          }
+a{
+  color: hsl(0, 0%, 41%);
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+#Grid{
+display: grid;
+grid-template-areas: 
+'A A A'
+'C C B'
+'D D D';
+}
 
 
 
-                    .Card{
-                      display: flex;
-                      justify-content: center;
-                      align-items: center;
-                    }
+.Card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
-                              .Main{
-                                grid-area: A;
-                                display: flex;
-                                flex-direction: column;
-                              }
+#header{
+  grid-area: A;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+#menu{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin-right: 40rem;                                
+}
+
+#submenuFeat,#submenuCompany{
+  list-style: none;
+  margin-top: 10px;
+}
+
+#button button{
+}
 
 
 
-
-                                        .image{
-                                          width: 100%;
-                                          display: flex;
-                                          justify-content: space-between;
-                                          padding: 15px;
-                                        }
-
-
-
-                              .winPaper{
-                                grid-area: B;
-
-                              }
-
-
-
-                                        .iconDesktop{
-                                          display: none;
-                                        }
-
-                                        .iconMobile{
-                                          display: block;
-                                          object-fit: cover;
-                                          max-width: 100%;
-                                        }
-
-
-                              .Text{
-                                grid-area: C;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                align-items: center;
-                                padding: 10px;
-                              }
-
-
-                                        .learnBtn{
-                                          font-size: 20px;
-                                          font-weight: 500;
-                                          color: hsl(0, 0%, 98%);
-                                          background-color: hsl(0, 0%, 8%);
-                                          padding: 10px 15px;
-                                          border-radius: 15px;
-                                          margin-bottom: 15px;
-                                          border: none;
-
-                                        }
-
-
-                                        .icons{
-                                          display: flex;
-                                          justify-content: center;
-                                          align-items: center;
-                                          width: 40%; 
-                                        }
-
-                                                  .icons img{
-                                                    margin: 20px;
-                                                  }
-
-
-                            .attribution{
-                              grid-area: D;
-                              display: flex;
-                              justify-content: center;
-                              align-items: center;
-                            
-                            }
-
-                                      .attribution a { 
-                                        color: hsl(228, 45%, 44%); 
-                                      }
-
-                                      .attribution p {
-                                        font-size: 10px;
-                                      }
-
-                            .Nav{
-                              display: flex;
-                              justify-content: right;                              
-                              
-                            }
-                                
-
-                                        .navigation{
-                                          position: absolute;
-                                          float:right;
-                                          top: 0px;   
-                                          padding: 0 15px 0;                                      
-                                          background-color: hsl(0, 0%, 98%);
-                                          display: none;
-                                          flex-direction: column;
-                                          width: 0;
-                                          height: 100vh;
-                                          transition: all 0.3s ease-in-out; 
-                                        }
-
-
-                                        .featiconUp,.compiconUp{
-                                          display: none;
-                                          margin: 5px;                                                                                                                            
-                                        }
-
-                                        .featiconDown, .compiconDown{
-                                          justify-content: center;
-                                        }
-
-                                        .featlistSecond, .complist{
-                                          display: none;
-                                          width: 100%;                                          
-                                          margin-top: -10px;
-                                        }
-                                              .featlistSecond img{
-                                                margin-right: 10px;
-                                              }
-                                              .featlistSecond li{
-                                                font-size: 16px;
-                                              }
-
-
-                                                  .imageExit{
-                                                    width: 100%;
-                                                    display: flex;
-                                                    justify-content: right;
-                                                    padding: 15px;
-                                                    margin-bottom: 20px;
-                                                  }
-                                                  
-                                                  ul{                                                   
-                                                    list-style: none;
-                                                    padding: 20px;
-                                                  }
-                                                            li{
-                                                              color: hsl(0, 0%, 41%);
-                                                              text-align: left;
-                                                              margin-bottom: 20px;
-                                                            }
-
-                                                  .buttons{
-                                                    width: 90%;
-                                                    display: flex;
-                                                    flex-direction: column;
-                                                    padding: 20px 10px;
-                                                  }
-
-                                                            .login-btn, .register-btn{
-                                                              align-items: center;
-                                                              justify-content: center;
-                                                              margin-bottom: 20px;
-                                                              font-size: 17px;
-                                                              padding: 10px;
-                                                              border-radius: 15px;
-                                                              background-color: hsl(0, 0%, 98%);
-                                                              color: hsl(0, 0%, 41%);
-                                                              border: 1px solid hsl(0, 0%, 41%);
-                                                            }
-
-                                                            .login-btn:hover, .register-btn:hover{                                                                                                                            
-                                                              font-weight: 700;
-                                                            }
-
-                                                  
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width:750px){
-
- h1{
-    
-    
-  }
-
-          #Grid{
-            display: grid;
-            grid-template-areas: 
-            'A E E'
-            'C C B'
-            'D D D';
-            gap: 10px;
-            margin: 20px;
-          }
-.Main{
+#winPaper{
+  grid-area: B;
   border: 1px solid black;
 }
-.iconMenu{
-display: none;
+
+
+
+.iconDesktop{
+  display: block;
+  object-fit: cover;
+  max-width: 100%;
 }
-                              .iconExit{
-                                display: none;
-                              }
 
-                              .Nav{
-                                display: flex;
-                              }
-
-                              .navigation{
-                                grid-area: E;
-                                border: 1px solid black;
-                                display: flex;
-                              }
-
-
-
-                              .Text{
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: left;
-                              }
-
-                                            .Text h1{
-                                              font-size: 70px;
-                                              margin-bottom: 50px;
-                                              margin-top: 80px;
-                                              width: 470px;
-                                              text-align: left;
-                                              
-                                            }
-                                            .Text p{
-                                              text-align: left;
-                                              width: 470px;
-                                            }
-                                            
-                                            .btn{
-                                              width: 470px;
-                                              
-                                            }
-                                            .learnBtn{
-                                              float: left;
-                                              
-                                            }
-
-                                            .learnBtn:hover{
-                                              cursor: pointer;
-                                              border: 2px solid hsl(0, 0%, 8%);
-                                              color: hsl(0, 0%, 8%);
-                                              background-color:hsl(0, 0%, 98%); ;
-                                            }
-
-                                                      .iconDesktop{
-                                                        display: block;
-                                                        object-fit: cover;
-                                                        max-width: 400px;
-                                                      }
-
-                                                      .iconMobile{
-                                                        display: none;
-                                                      }
-
-                                                      .icons img{
-                                                        margin: 35px;
-                                                      }
-
+.iconMobile{
+  display: none;
+  object-fit: cover;
+  max-width: 100%;
 }
 
 
+
+
+.attribution{
+  grid-area: D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+.attribution p {
+  font-size: 10px;
+}
