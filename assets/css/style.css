@@ -152,20 +152,21 @@ grid-template-areas:
 
 
 
-.attribution{
+#attribution{
   grid-area: D;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin-top: 30px;
 
 }
 
-.attribution a { 
+#attribution a { 
   color: hsl(228, 45%, 44%); 
 }
 
-.attribution p {
+#attribution p {
   font-size: 10px;
 }
 
@@ -226,7 +227,6 @@ grid-template-areas:
   padding-left: 0;
   padding-top: 0;
   padding-bottom: 0;
-  border: 1px solid black;
 }
 
 #texto h1,p{
@@ -256,7 +256,6 @@ grid-template-areas:
   width: 100%;
   display: flex;
   justify-content: center;
-  border: 1px solid black;
 }
 
 .icons img{
@@ -269,15 +268,15 @@ grid-template-areas:
   margin-left: 35%;  
 }
 
-.attribution{
-  grid-area: D;
-  width: 100%;
-  padding: 0;
-  justify-content: baseline;
-  align-items: center;
-  text-align: center;
-  border: 1px solid black;
+#attribution{
+  margin-top: 10px;
 
+}
+
+#attribution p {
+  width: 100%;
+  font-size: 8px;
+  line-height: 10px;
 }
   
 }
