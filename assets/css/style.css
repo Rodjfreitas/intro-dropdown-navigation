@@ -39,15 +39,6 @@ grid-template-areas:
 }
 
 
-
-.Card{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
 #header{
   grid-area: A;
   display: flex;
@@ -194,12 +185,6 @@ grid-template-areas:
   'D';
 }
 
-.Card{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 #header{
   display: flex;
@@ -223,12 +208,14 @@ grid-template-areas:
 
 #menu{
   display: none;
-  position: absolute;
-  right: 0;
+  margin-right: 0;
+  justify-content: space-between;
 }
 
 #btn-menu{
   display: block;
+  position: absolute;
+  right: 10px;
 }
 
 #button{
@@ -277,6 +264,14 @@ grid-template-areas:
 }
 
 .attribution{
+  grid-area: D;
+  width: 100%;
+  padding: 0;
+  justify-content: baseline;
+  align-items: center;
+  text-align: center;
+  border: 1px solid black;
+
 }
   
 }
