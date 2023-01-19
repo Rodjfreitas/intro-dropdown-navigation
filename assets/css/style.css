@@ -254,13 +254,14 @@ grid-template-areas:
 
 .icons{
   width: 100%;
+  display: flex;
+  justify-content: center;
   border: 1px solid black;
 }
 
 .icons img{
-  width: 60px;
-  margin-left: 18px;
-  margin-right:7px;
+  width: 64px;
+  margin: 10px;
   justify-content: baseline;
 }
 
