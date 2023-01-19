@@ -258,8 +258,8 @@ grid-template-areas:
 }
 
 .icons img{
-  width: 70px;
-  margin-left: 12px;
+  width: 60px;
+  margin-left: 18px;
   margin-right:7px;
   justify-content: baseline;
 }
