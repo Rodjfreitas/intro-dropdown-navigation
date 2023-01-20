@@ -204,7 +204,6 @@ grid-template-areas:
 #winPaper{
   grid-area: B;
   margin-right: 0;
-  border: 1px solid black;
 }
 
 .iconDesktop{
@@ -240,33 +239,27 @@ grid-template-areas:
   padding-left: 0;
   padding-top: 0;
   padding-bottom: 0;
-  border: 1px solid black;
 }
 
-#texto h1,p{  
-  text-align: center;
-}
+
 
 
 #texto h1{
-  font-size: 40.5px;
+  font-size: 38px;
   display: flex;
   margin: auto;
-  width: 400px;
-  margin-top: 30px;
+  width: 380px;
+  margin-top: 50px;
   margin-bottom: 20px;
-  border: 1px solid black;
-  padding: 5px;
+  padding: 8px;
 }
 
 #texto p{
   text-align: center;
-  font-size: 15px;
+  font-size: 17px;
   display: flex;
   margin: auto;
-  width: 320px;
-  border: 1px solid black;
-  
+  width: 370px;  
 }
 
 .icons{
