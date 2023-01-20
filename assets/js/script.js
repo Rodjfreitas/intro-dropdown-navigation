@@ -1,9 +1,12 @@
-const btnMobile = document.querySelector("#btn-menu")
+const openbtn = document.querySelector('.btn-open');
+const closebtn = document.querySelector('.btn-close');
+const navbtn = document.querySelector('.nav-btn');
+const navmenu = document.querySelector('.nav-menu');
 
-function toggleMenu() {
-  const navegacao = document.querySelector("#nav");   
-    navegacao.classList.toggle('active');
-    console.log(navegacao);
-} 
-
-btnMobile.addEventListener('click',toggleMenu);
+openbtn.addEventListener('click', () =>{
+  openbtn.classList.toggle('active');
+  closebtn.classList.toggle('active');
+  navmenu.classList.toggle('active');
+  navbtn.classList.toggle('active');
+  
+})

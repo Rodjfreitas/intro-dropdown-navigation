@@ -83,22 +83,52 @@ footer p{
   .btn-close{
     display: none;
   }
+
+  .btn-close.active{
+    display: block;
+  }
   
   .nav-btn{
     display: none;
   }
 
+  .nav-btn{
+    position: fixed;
+    float: left;
+    right: -100%;
+    top: 220px;
+    gap: 30px;
+    text-align: left;
+    flex-direction: column;
+    width: 100%;
+    background-color: hsl(0, 0%, 98%);
+    padding: 50px;       
+    transition: 0.3s;
+    border: 1px solid black;
+    height: 100vh;
+  }
+
+  .nav-btn.active{
+    display: flex;     
+    right:0;
+    
+  }
+
   .nav-menu{
+    display: flex;
     position: fixed;
     left: -100%;
     top: 70px;
-    gap: 0;
-    border-radius: 0 0 20px 20px;
+    gap: 20px;
     background-color:hsl(0, 0%, 98%);
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     transition: 0.3s;
+    border: 1px solid black;
+    padding: 10px;
+    
   }
 
   .nav-item{
@@ -108,7 +138,6 @@ footer p{
   .nav-menu.active{
     left: 0;
   }
-
 
 
   
