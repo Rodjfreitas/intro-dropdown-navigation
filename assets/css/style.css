@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body{
@@ -234,28 +235,37 @@ grid-template-areas:
 }
 
 #texto{
+    
+  text-align: center;
   padding-left: 0;
   padding-top: 0;
   padding-bottom: 0;
   border: 1px solid black;
 }
 
-#texto h1,p{
-  width: 0;
-  margin-bottom: 0;
-  text-align: center;  
-  width: 100%;
+#texto h1,p{  
+  text-align: center;
 }
 
+
 #texto h1{
-  font-size: 35px;
+  font-size: 40.5px;
+  display: flex;
+  margin: auto;
+  width: 400px;
+  margin-top: 30px;
   margin-bottom: 20px;
+  border: 1px solid black;
+  padding: 5px;
 }
 
 #texto p{
-  margin-bottom: 20px;
-  padding: 0 10%;
-  font-size: 75%;  
+  text-align: center;
+  font-size: 15px;
+  display: flex;
+  margin: auto;
+  width: 320px;
+  border: 1px solid black;
   
 }
 
