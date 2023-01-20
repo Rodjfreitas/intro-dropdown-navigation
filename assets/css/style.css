@@ -49,9 +49,7 @@ grid-template-areas:
 }
 
 #nav{
-  display: flex; 
-  justify-content: space-between; 
-  border: 1px solid bl;
+  display: block;
 }
 
 #menu{
@@ -181,12 +179,8 @@ grid-template-areas:
 }
 
 #btn-menu, #btn-close{
-  display: non;
+  display: none;
 }
-
-
-
-
 
 
 @media screen and (max-width: 767px) {
@@ -222,7 +216,9 @@ grid-template-areas:
   width: 100%;
 }
 
-
+#nav{
+  display: none;
+}
 
 #main{
   margin-right: 0;
@@ -246,12 +242,14 @@ grid-template-areas:
 }
 
 
+
+
 #texto h1{
   font-size: 38px;
   display: flex;
   margin: auto;
   width: 380px;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 20px;
   padding: 8px;
 }
@@ -292,16 +290,5 @@ grid-template-areas:
   font-size: 8px;
   line-height: 10px;
 }
-
-#nav{
-  display:flex;
-  flex-direction: column;
-}
-
-#Menu{
-  flex-direction: column;
-}
-
-
   
 }
