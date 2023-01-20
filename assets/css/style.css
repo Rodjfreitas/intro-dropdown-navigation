@@ -271,7 +271,10 @@ grid-template-areas:
 }
 
 .btn-learn{
-  margin-left: 35%;  
+  display: flex;
+  margin: auto;
+  font-weight: 500;
+  margin-top: 40px;
 }
 
 #attribution{
