@@ -47,6 +47,10 @@ grid-template-areas:
   padding: 20px;
 }
 
+#nav{
+  display: block;
+}
+
 #menu{
   display: flex;
   list-style: none;
@@ -85,12 +89,16 @@ grid-template-areas:
 }
 
 #texto h1,p{
-  width: 450px;
+  width: 440px;
   margin-bottom: 70px;
 }
 
 #texto p{
   line-height: 25px;
+}
+
+.icons{
+  margin-top: 25px;
 }
 
 .icons img{
@@ -174,7 +182,7 @@ grid-template-areas:
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 767px) {
 
 #Grid{
   display: grid;
@@ -188,12 +196,14 @@ grid-template-areas:
 
 #header{
   display: flex;
+  border: 1px solid black;
   
 }
 
 #winPaper{
   grid-area: B;
   margin-right: 0;
+  border: 1px solid black;
 }
 
 .iconDesktop{
@@ -203,18 +213,20 @@ grid-template-areas:
 .iconMobile{
   display: block;
   object-fit: cover;
+  width: 100%;
 }
 
-#menu{
+#nav{
   display: none;
+}
+
+#main{
   margin-right: 0;
   justify-content: space-between;
 }
 
 #btn-menu{
   display: block;
-  position: absolute;
-  right: 10px;
 }
 
 #button{
@@ -225,41 +237,37 @@ grid-template-areas:
   padding-left: 0;
   padding-top: 0;
   padding-bottom: 0;
+  border: 1px solid black;
 }
 
 #texto h1,p{
   width: 0;
   margin-bottom: 0;
-  text-align: center;
+  text-align: center;  
+  width: 100%;
 }
 
 #texto h1{
   font-size: 35px;
-  width: 100%;
   margin-bottom: 20px;
 }
 
 #texto p{
-  width: 85%;
-  justify-content: center;
-  line-height: 25px;
-  text-align: center;
-  font-size: 15px;
-  margin-left: 30px;
   margin-bottom: 20px;
+  padding: 0 10%;
+  font-size: 75%;  
   
 }
 
 .icons{
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: center;  
 }
 
 .icons img{
-  width: 64px;
+  width: 50px;
   margin: 20px;
-  justify-content: baseline;
 }
 
 .btn-learn{
