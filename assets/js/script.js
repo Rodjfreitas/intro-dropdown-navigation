@@ -10,3 +10,10 @@ openbtn.addEventListener('click', () =>{
   navbtn.classList.toggle('active');
   
 })
+
+closebtn.addEventListener('click',() =>{
+  openbtn.classList.toggle('active');
+  closebtn.classList.toggle('active');
+  navmenu.classList.toggle('active');
+  navbtn.classList.toggle('active');
+})
