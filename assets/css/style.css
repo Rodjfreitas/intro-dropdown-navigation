@@ -139,6 +139,36 @@ footer p{
   margin-left: 120px ;
 }
 
+li img{
+  margin-right: 10px;
+  max-width: 10px;
+}
+
+.submenu-feat{
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 60px;
+  background-color:hsl(0, 0%, 98%); 
+  border-radius: 10px;
+}
+
+.submenu-feat.active{
+  display: flex;
+}
+
+.subitens-feat{
+  margin: 5px;
+}
+
+.subitens-feat a{
+  color: hsl(0, 0%, 41%);
+}
+
+.subitens-feat a:hover{
+  color:hsl(0, 0%, 8%) ;
+}
+
 
 
 @media (max-width: 768px){
@@ -300,6 +330,10 @@ footer p{
     max-width: 64px;
     margin: 10px;
     
+  }
+
+  .submenu-feat{
+    position: static;
   }
 
   
