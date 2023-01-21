@@ -135,7 +135,7 @@ footer p{
     position: fixed;
     float: left;
     left: -100%;
-    top: 220px;
+    top: 200px;
     gap: 30px;
     text-align: left;
     flex-direction: column;
@@ -166,6 +166,7 @@ footer p{
     width: 100%;
     transition: 0.3s;
     padding: 10px;
+    z-index: 1;
     
   }
 
