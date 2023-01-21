@@ -5,6 +5,10 @@
   font-family: 'Epilogue', sans-serif;
 }
 
+body{
+  background-color: hsl(0, 0%, 98%); 
+}
+
 header{
   background-color: hsl(0, 0%, 98%);
 }
@@ -151,6 +155,9 @@ li img{
   top: 60px;
   background-color:hsl(0, 0%, 98%); 
   border-radius: 10px;
+  box-shadow: 0 0 5px 5px hsl(0, 0%, 41%);
+  padding: 5px;
+  transition: all 0.5s ease-in;
 }
 
 .submenu-feat.active{
@@ -161,12 +168,33 @@ li img{
   margin: 5px;
 }
 
-.subitens-feat a{
+.subitens-feat a, .subitens-comp a{
   color: hsl(0, 0%, 41%);
 }
 
-.subitens-feat a:hover{
+.subitens-feat a:hover, .subitens-comp a:hover{
   color:hsl(0, 0%, 8%) ;
+}
+
+.submenu-comp{
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 60px;
+  left: 30%;
+  background-color:hsl(0, 0%, 98%); 
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px hsl(0, 0%, 41%);
+  padding: 5px;
+  transition: all 0.5s ease-in;
+}
+
+.submenu-comp.active{
+  display: flex;
+}
+
+.subitens-comp{
+  margin: 10px;
 }
 
 
@@ -334,6 +362,14 @@ li img{
 
   .submenu-feat{
     position: static;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .submenu-comp{
+    position: static;
+    box-shadow: none;
+    padding: 0;
   }
 
   
