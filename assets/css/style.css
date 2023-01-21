@@ -179,6 +179,7 @@ footer p{
 
    main{
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-areas: 
     'A'
     'B' 
@@ -189,15 +190,17 @@ footer p{
   }
 
   h1{
-    font-size: 30px;
+    font-size: 35px;
     margin-top: 40px;
     margin-bottom: 0;
+    
+    
   }
 
   
 
   #winPaper{
-    width: 165%;
+    width: 100%;
   }
   .iconDesktop{
     display: none;
@@ -209,17 +212,47 @@ footer p{
   }
 
   #texto{
-    width: 165%;
+    width: 100%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   #texto p{
-    font-size: 15px;
+    font-size: 14px;
     line-height: 18px;
-    padding: 9.5%;
+    margin-top: 10px;
+    margin-bottom: 20px;    
+    width: 300px;
   }
 
+  .btn-learn{
+    padding: 15px;
+    border-radius: 15px;
+    font-weight: 700;
+    background-color: hsl(0, 0%, 8%);
+    color:hsl(0, 0%, 98%);
+    border: 0;
+    margin-bottom: 40px;
+  }
 
+  .btn-learn:hover{
+    cursor: pointer;
+    border: 2px solid hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 98%);
+  }
+
+#icons{
+  margin-bottom: 30px;
+}
+
+  .icon{
+    margin: 5px;
+    
+  }
 
   
 }
