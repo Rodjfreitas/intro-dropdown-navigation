@@ -37,6 +37,9 @@ footer{
   grid-area: C;
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
 }
 
 footer p{
@@ -133,16 +136,22 @@ footer p{
 
   .nav-btn{
     position: fixed;
-    float: left;
     left: -100%;
     top: 200px;
     gap: 30px;
     text-align: left;
+    align-items: flex-start;
     flex-direction: column;
-    width: 50%;
+    width: 50%;    
+    transition: 0.3s;
     background-color: hsl(0, 0%, 98%);
     padding: 50px;
     height: 100vh;
+  }
+
+  .nav-btn button{
+    width: 100%;
+    border: 1px solid black;
   }
 
 
@@ -191,7 +200,7 @@ footer p{
   }
 
   h1{
-    font-size: 35px;
+    font-size: 25px;
     margin-top: 40px;
     margin-bottom: 0;
     
@@ -256,4 +265,40 @@ footer p{
   }
 
   
+}
+
+
+@media (min-width: 769px){
+
+  h1{
+    font-size: 60px;
+    border: 1px solid black;
+    width: 70%;
+    margin-left: 120px;
+    margin-bottom: 50px;
+  }
+  
+  p{
+    width: 70%;
+    border: 1px solid black;
+    margin-left: 120px;
+    color: hsl(0, 0%, 41%);
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .btn-learn{
+    margin-left: 120px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color:hsl(0, 0%, 98%) ;
+    background-color: hsl(0, 0%, 8%);
+    font-weight: 700;
+    border: 0;
+    margin-bottom: 160px;
+  }
+
+  #icons{
+    margin-left: 120px;
+  }
 }
