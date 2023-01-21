@@ -20,6 +20,10 @@ a{
 
 h1{
   font-size: 60px;
+  width: 400px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  margin-left: 120px;
 }
 
 main{
@@ -88,6 +92,7 @@ footer p{
 
 .iconDesktop{
   display: block;
+  max-width: 80%;
 }
 .iconMobile{
   display: none;
@@ -104,6 +109,34 @@ footer p{
 
 #texto{
   grid-area: B;
+}
+
+#texto p{
+  width: 400px;
+  margin-left: 120px;
+  margin-bottom: 30px;
+}
+
+.btn-learn{
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: 700;
+  background-color: hsl(0, 0%, 8%);
+  color:hsl(0, 0%, 98%);
+  border: 0;
+  margin-bottom: 90px;
+  margin-left: 120px;
+}
+
+.btn-learn:hover{
+  cursor: pointer;
+  border: 2px solid hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 8%);
+  background-color: hsl(0, 0%, 98%);
+}
+
+#icons{
+  margin-left: 120px ;
 }
 
 
@@ -151,7 +184,6 @@ footer p{
 
   .nav-btn button{
     width: 100%;
-    border: 1px solid black;
   }
 
 
@@ -200,8 +232,10 @@ footer p{
   }
 
   h1{
-    font-size: 25px;
+    width: 100%;
+    font-size: 35px;
     margin-top: 40px;
+    margin-left: 0;
     margin-bottom: 0;
     
     
@@ -231,11 +265,12 @@ footer p{
   }
 
   #texto p{
-    font-size: 14px;
+    font-size: 15px;
     line-height: 18px;
     margin-top: 10px;
-    margin-bottom: 20px;    
-    width: 300px;
+    margin-bottom: 20px;
+    margin-left: 0;    
+    width: 320px;
   }
 
   .btn-learn{
@@ -245,7 +280,8 @@ footer p{
     background-color: hsl(0, 0%, 8%);
     color:hsl(0, 0%, 98%);
     border: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-left: 0;
   }
 
   .btn-learn:hover{
@@ -256,11 +292,13 @@ footer p{
   }
 
 #icons{
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-left: 0;
 }
 
   .icon{
-    margin: 5px;
+    max-width: 64px;
+    margin: 10px;
     
   }
 
@@ -268,18 +306,75 @@ footer p{
 }
 
 
-@media (min-width: 769px){
+
+@media (min-width: 769px) and (max-width:1023px){
 
   h1{
-    font-size: 60px;
+    font-size: 50px;
     border: 1px solid black;
-    width: 70%;
-    margin-left: 120px;
+    width: 330px;
+    margin-left: 80px;
     margin-bottom: 50px;
+    margin-top: 20px;
   }
   
   p{
-    width: 70%;
+    color: hsl(0, 0%, 41%);
+  }
+
+  #texto p{
+    line-height: 20px;
+    font-size: 13px;
+    margin-left: 80px;
+    width: 330px;    
+    margin-bottom: 20px;
+  }
+  
+  .btn-learn{
+    margin-left: 80px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color:hsl(0, 0%, 98%) ;
+    background-color: hsl(0, 0%, 8%);
+    font-weight: 700;
+    border: 0;
+    margin-bottom: 40px;
+  }
+
+  #icons{
+    width: 100%;
+    margin-left: 80px;
+    margin-top: 0;
+  }
+
+  .icon{
+    max-width: 64px;
+    margin: 10px;   
+    
+  }
+
+  .iconDesktop{
+    max-width: 100%;
+  }
+}
+
+
+
+
+
+@media (min-width: 1024px) and (max-width: 1279){
+
+  h1{
+    font-size: 56px;
+    border: 1px solid black;
+    width: 380px;
+    margin-left: 120px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  
+  p{
+    width: 75%;
     border: 1px solid black;
     margin-left: 120px;
     color: hsl(0, 0%, 41%);
@@ -295,10 +390,25 @@ footer p{
     background-color: hsl(0, 0%, 8%);
     font-weight: 700;
     border: 0;
-    margin-bottom: 160px;
+    margin-bottom: 0;
   }
 
+ 
+
   #icons{
-    margin-left: 120px;
+    width: 100%;
+    margin-left: 80px;
+    margin-top: 0;
+  }
+
+  .icon{
+    max-width: 64px;
+    margin: 10px;   
+    
+  }
+
+  .iconDesktop{
+    max-width: 100%;
   }
 }
+
