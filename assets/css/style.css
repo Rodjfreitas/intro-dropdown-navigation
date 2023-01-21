@@ -119,6 +119,8 @@ footer p{
   width: 400px;
   margin-left: 120px;
   margin-bottom: 30px;
+  color: hsl(0, 0%, 41%);
+  line-height: 25px;
 }
 
 .btn-learn{
